@@ -1,0 +1,39 @@
+<hello name="{{ name }}"></hello>
+
+<h2>Candidates</h2>
+<table class="table table-stripped">
+  <thead>
+    <tr>
+        <th>ID     </th>
+        <th> Name   </th>
+      <th> Email  </th>
+    <th> Gender </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+        <td>  {{student.id}}   </td>
+        <td>  {{student.name}}   </td>
+        <td>  {{student.email}}   </td>
+        <td>  {{student.gender}}   </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Add New Candidate</h2>
+<form>
+  <div>
+<input type="text" placeholder="First Name" style="margin-right : 5px" class="text-line"/>
+<input type="text" placeholder="Last Name" style="margin-left : 5px" class="text-line"/>
+  </div>
+  <div style="margin : 20px 0">
+<input type="text" placeholder="Email" class="text-line one-text"/>
+  </div>
+  <div >
+    <div class="last-form">
+<label><input type="radio" name="gender" id="Male" value="Male">Male</label>
+<label><input type="radio" name="gender" id="FeMale" value="Female">Female</label>
+  </div>
+<input type="submit" class="btn" value="Add">
+  </div>
+</form>

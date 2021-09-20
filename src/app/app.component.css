@@ -1,0 +1,25 @@
+p {
+  font-family: Lato;
+}
+.text-line {
+  width: calc(50% - 14px);
+  display: inline-block;
+  vertical-align: top;
+  border : 0;
+  border-bottom: 1px solid #000 !important;
+}
+.text-line.one-text{
+ width: 100%; 
+}
+.btn{
+  color: white;
+  border-color: blue;
+  background-color: blue;
+  padding: 6px;
+  font-size: 14px;
+}
+.last-form{
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
