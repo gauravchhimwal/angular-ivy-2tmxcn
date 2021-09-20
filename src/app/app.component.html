@@ -1,19 +1,21 @@
-<hello name="{{ name }}"></hello>
+<hello name=""></hello>
 
 <h2>Candidates</h2>
 <table class="table table-stripped">
   <thead>
     <tr>
         <th>ID     </th>
-        <th> Name   </th>
+        <th> First Name   </th>
+        <th> Last Name   </th>
       <th> Email  </th>
     <th> Gender </th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let student of students">
-        <td>  {{student.id}}   </td>
-        <td>  {{student.name}}   </td>
+    <td>  {{student.id}}   </td>
+        <td>  {{student.first_name}}   </td>
+        <td>  {{student.last_name}}   </td>
         <td>  {{student.email}}   </td>
         <td>  {{student.gender}}   </td>
     </tr>
